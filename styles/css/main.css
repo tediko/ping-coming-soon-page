@@ -22,4 +22,125 @@ body {
 
 /* Variables */
 /* Intro section */
+.intro {
+  width: 100%;
+}
+
+.intro__container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.intro__logo {
+  background: url("../../assets/img/logo.svg");
+  background-repeat: no-repeat;
+  background-size: 3.98rem;
+  width: 86px;
+  padding-top: 5%;
+}
+
+.intro__heading {
+  color: #969696;
+  font-weight: 300;
+  font-size: 2.2rem;
+  margin: 40px 0 14px 0;
+}
+
+.intro__heading span {
+  color: #151f29;
+  font-weight: 700;
+}
+
+.intro__subheading {
+  font-size: 0.915rem;
+  color: #151f29;
+}
+
+.intro__form {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  margin: 36px 0 82px 0;
+}
+
+.intro__input {
+  height: 51px;
+  border-radius: 40px;
+  border: 1px solid #c2d3ff;
+  width: 100%;
+  padding: 0 0 0 28px;
+}
+
+.intro__input::placeholder {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 0.725rem;
+  color: #c2d3ff;
+}
+
+.intro__cta {
+  max-width: 181px;
+  width: 100%;
+  height: 51px;
+  border-radius: 40px;
+  border: none;
+  font-size: 0.725rem;
+  font-weight: 600;
+  color: #fff;
+  background: #4f7df3;
+  margin-left: 15px;
+  letter-spacing: -0.015rem;
+  cursor: pointer;
+  transition: background 250ms ease-in;
+}
+
+.intro__cta:hover {
+  background: #7ea0f6;
+}
+
+.intro__hero {
+  background: url("../../assets/img/illustration-dashboard.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 64%;
+}
+
+.intro__socials {
+  display: flex;
+  flex-flow: row;
+  margin: 43px 0 22px 0;
+}
+
+.intro__socials * + * {
+  margin-left: 10px;
+}
+
+.intro__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  color: #4f7df3;
+  text-decoration: none;
+  font-size: 0.7rem;
+  transition: background 250ms ease-in, border 250ms ease-in, color 300ms ease-in;
+}
+
+.intro__link:hover {
+  background: #4f7df3;
+  border: 1px solid #4f7df3;
+  color: #fff;
+}
+
+.intro__copy {
+  font-size: 0.55rem;
+  color: #969696;
+}
 /*# sourceMappingURL=main.css.map */
