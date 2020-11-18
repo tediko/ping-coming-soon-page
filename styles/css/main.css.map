@@ -1,11 +1,12 @@
 {
     "version": 3,
-    "mappings": "ACAA,kBAAkB;ACClB,OAAO,CAAC,4FAAI;ADAZ,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;ACLD,WAAW;AAGX,mBAAmB;AACnB,AAAA,IAAI,CAAC;EACD,SAAS,EAAE,IAAI;CAClB;;AAED,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,KAAK;EACjB,WAAW,EAAE,4BAA4B;CAC5C;;ACdD,eAAe",
+    "mappings": "ACAA,kBAAkB;ACClB,OAAO,CAAC,4FAAI;ADAZ,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;ACLD,WAAW;AAGX,mBAAmB;AACnB,AAAA,IAAI,CAAC;EACD,SAAS,EAAE,IAAI;CAClB;;AAED,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,KAAK;EACjB,WAAW,EAAE,4BAA4B;CAC5C;;ACdD,eAAe;ACAf,mBAAmB",
     "sources": [
         "../saas/main.scss",
         "../saas/base/_reset.scss",
         "../saas/base/_typography.scss",
-        "../saas/utilities/_variables.scss"
+        "../saas/utilities/_variables.scss",
+        "../saas/layout/intro.scss"
     ],
     "names": [],
     "file": "main.css"
