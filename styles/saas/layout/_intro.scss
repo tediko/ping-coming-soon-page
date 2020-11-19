@@ -110,17 +110,46 @@
         font-size: 0.7rem;
         transition: background 250ms ease-in,
                     border 250ms ease-in,
-                    color 300ms ease-in;
+                    color 300ms ease-in,
+                    transform 250ms ease-in;
 
         &:hover {
             background: $clr-blue;
             border: 1px solid $clr-blue;
             color: #fff;
+            transform: scale(1.15);
         }
     }
 
     &__copy {
         font-size: 0.55rem;
         color: $clr-gray;
+    }
+}
+
+/* Media queries */
+@media (max-width: $bp-mobile) {
+    .intro {
+
+        &__heading {
+            font-size: 1.3rem;
+        }
+
+        &__subheading{
+            font-size: 0.715rem;
+        }
+
+        &__form {
+            flex-flow: column;
+        }
+
+        &__input {
+            min-width: auto;
+        }
+
+        &__cta {
+            max-width: 100%;
+            margin: 10px 0 0 0;
+        }
     }
 }

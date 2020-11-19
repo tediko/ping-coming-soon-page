@@ -133,17 +133,38 @@ body {
   color: #4f7df3;
   text-decoration: none;
   font-size: 0.7rem;
-  transition: background 250ms ease-in, border 250ms ease-in, color 300ms ease-in;
+  transition: background 250ms ease-in, border 250ms ease-in, color 300ms ease-in, transform 250ms ease-in;
 }
 
 .intro__link:hover {
   background: #4f7df3;
   border: 1px solid #4f7df3;
   color: #fff;
+  transform: scale(1.15);
 }
 
 .intro__copy {
   font-size: 0.55rem;
   color: #969696;
+}
+
+/* Media queries */
+@media (max-width: 480px) {
+  .intro__heading {
+    font-size: 1.3rem;
+  }
+  .intro__subheading {
+    font-size: 0.715rem;
+  }
+  .intro__form {
+    flex-flow: column;
+  }
+  .intro__input {
+    min-width: auto;
+  }
+  .intro__cta {
+    max-width: 100%;
+    margin: 10px 0 0 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
