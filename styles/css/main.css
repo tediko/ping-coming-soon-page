@@ -43,6 +43,42 @@ body {
   }
 }
 
+@keyframes heroScale {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* Intro section */
 .intro {
   width: 100%;
@@ -56,6 +92,7 @@ body {
   max-width: 580px;
   margin: 80px auto;
   text-align: center;
+  animation: opacity 1000ms ease-in;
 }
 
 .intro__logo {
@@ -109,6 +146,7 @@ body {
   width: 100%;
   padding: 0 0 0 28px;
   min-width: 280px;
+  animation: slideLeft 1000ms forwards;
   transition: border 250ms ease-in, box-shadow 250ms ease-in;
 }
 
@@ -148,6 +186,7 @@ body {
   letter-spacing: -0.015rem;
   cursor: pointer;
   box-shadow: 0px 0px 16px 3px #c2d3ff;
+  animation: slideRight 1000ms forwards;
   transition: background 250ms ease-in;
 }
 
@@ -161,6 +200,7 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   padding-top: 64%;
+  animation: heroScale 1000ms forwards;
 }
 
 .intro__socials {

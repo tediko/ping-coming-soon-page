@@ -10,6 +10,7 @@
         max-width: 580px;
         margin: 80px auto;
         text-align: center;
+        animation: opacity 1000ms ease-in;
     }
 
     &__logo {
@@ -63,6 +64,7 @@
         width: 100%;
         padding: 0 0 0 28px;
         min-width: 280px;
+        animation: slideLeft 1000ms forwards;
         transition: border 250ms ease-in,
                     box-shadow 250ms ease-in;
 
@@ -103,6 +105,7 @@
         letter-spacing: -0.015rem;
         cursor: pointer;
         box-shadow: 0px 0px 16px 3px $clr-blue-pale;
+        animation: slideRight 1000ms forwards;
         transition: background 250ms ease-in;
 
         &:hover {
@@ -116,6 +119,7 @@
         background-repeat: no-repeat;
         width: 100%;
         padding-top: 64%;
+        animation: heroScale 1000ms forwards;
     }
 
     &__socials {
