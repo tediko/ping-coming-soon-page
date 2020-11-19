@@ -13,6 +13,7 @@ html {
 }
 
 body {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +63,7 @@ body {
   background-repeat: no-repeat;
   background-size: 3.98rem;
   width: 86px;
-  padding-top: 5%;
+  padding-top: 1.4rem;
 }
 
 .intro__heading {
@@ -224,5 +225,31 @@ body {
     max-width: 100%;
     margin: 10px 0 0 0;
   }
+}
+
+.footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #c2d3ff;
+  font-size: 0.7rem;
+}
+
+.footer__attribution {
+  text-align: center;
+}
+
+.footer a {
+  color: #6b6c6e;
+  text-decoration: none;
+  transition: color 250ms ease-in;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #4f7df3;
 }
 /*# sourceMappingURL=main.css.map */
