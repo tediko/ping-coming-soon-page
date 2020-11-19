@@ -91,8 +91,14 @@ body {
 }
 
 .intro__form.active .intro__error {
-  display: block;
+  visibility: visible;
+  height: 20px;
   animation: errorMsg 500ms forwards;
+}
+
+.intro__form.active .intro__input {
+  border: 1px solid #ff5263;
+  box-shadow: 0 0 6px -1px #ff5263;
 }
 
 .intro__input {
@@ -102,6 +108,7 @@ body {
   width: 100%;
   padding: 0 0 0 28px;
   min-width: 280px;
+  transition: border 250ms ease-in, box-shadow 250ms ease-in;
 }
 
 .intro__input::placeholder {
@@ -110,14 +117,20 @@ body {
   color: #c2d3ff;
 }
 
+.intro__input:invalid {
+  box-shadow: none;
+}
+
 .intro__error {
   position: absolute;
-  display: none;
+  visibility: hidden;
   font-size: 0.7rem;
   color: #ff5263;
   top: 52px;
   left: 28px;
   padding: 10px 0 0 0;
+  height: 0;
+  transition: height 250ms ease-in;
 }
 
 .intro__cta {
@@ -196,12 +209,16 @@ body {
   .intro__form {
     flex-flow: column;
   }
+  .intro__form.active .intro__error {
+    margin: 10px 0 20px 0;
+    animation: errorMsg 500ms forwards;
+  }
   .intro__input {
     min-width: auto;
   }
   .intro__error {
+    padding: 0;
     position: initial;
-    margin: 10px 0 20px 0;
   }
   .intro__cta {
     max-width: 100%;
