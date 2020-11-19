@@ -72,9 +72,11 @@ body {
 
 @keyframes opacity {
   0% {
+    overflow: hidden;
     opacity: 0;
   }
   100% {
+    overflow: visible;
     opacity: 1;
   }
 }
