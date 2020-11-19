@@ -126,10 +126,6 @@
         display: flex;
         flex-flow: row;
         margin: 43px 0 22px 0;
-
-        * + * {
-            margin-left: 10px;
-        }
     }
 
     &__link {
@@ -153,6 +149,21 @@
             border: 1px solid $clr-blue;
             color: #fff;
             transform: scale(1.15);
+        }
+
+        &:not(last-child) {
+                margin-right: 10px;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
         }
     }
 

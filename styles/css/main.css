@@ -209,10 +209,6 @@ body {
   margin: 43px 0 22px 0;
 }
 
-.intro__socials * + * {
-  margin-left: 10px;
-}
-
 .intro__link {
   display: flex;
   justify-content: center;
@@ -232,6 +228,21 @@ body {
   border: 1px solid #4f7df3;
   color: #fff;
   transform: scale(1.15);
+}
+
+.intro__link:not(last-child) {
+  margin-right: 10px;
+}
+
+.intro__link .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .intro__copy {
