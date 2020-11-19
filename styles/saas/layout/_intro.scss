@@ -176,6 +176,9 @@
 /* Media queries */
 @media (max-width: $bp-mobile) {
     .intro {
+        &__container {
+            margin: 20px auto;
+        }
 
         &__heading {
             font-size: 1.3rem;

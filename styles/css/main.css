@@ -252,6 +252,9 @@ body {
 
 /* Media queries */
 @media (max-width: 480px) {
+  .intro__container {
+    margin: 20px auto;
+  }
   .intro__heading {
     font-size: 1.3rem;
   }
