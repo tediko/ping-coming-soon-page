@@ -45,8 +45,13 @@
         margin: 36px 0 82px 0;
 
         &.active .intro__error {
-                display: block;
-                animation: errorMsg 500ms forwards;
+            display: block;
+            animation: errorMsg 500ms forwards;
+        }
+
+        &.active .intro__input {
+            border: 1px solid $clr-red;
+            box-shadow: 0 0 6px -1px $clr-red;
         }
     }
 
@@ -57,11 +62,17 @@
         width: 100%;
         padding: 0 0 0 28px;
         min-width: 280px;
+        transition: border 250ms ease-in,
+                    box-shadow 250ms ease-in;
 
         &::placeholder {
             font-family: 'Libre Franklin', sans-serif;
             font-size: 0.725rem;
             color: $clr-blue-pale;
+        }
+
+        &:invalid {
+            box-shadow: none;
         }
     }
 
