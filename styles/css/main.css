@@ -22,6 +22,15 @@ body {
 }
 
 /* Variables */
+@keyframes errorMsg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* Intro section */
 .intro {
   width: 100%;
@@ -63,10 +72,16 @@ body {
 }
 
 .intro__form {
+  position: relative;
   display: flex;
   flex-flow: row;
   width: 100%;
   margin: 36px 0 82px 0;
+}
+
+.intro__form.active .intro__error {
+  display: block;
+  animation: errorMsg 500ms forwards;
 }
 
 .intro__input {
@@ -82,6 +97,16 @@ body {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 0.725rem;
   color: #c2d3ff;
+}
+
+.intro__error {
+  position: absolute;
+  display: none;
+  font-size: 0.7rem;
+  color: #ff5263;
+  top: 52px;
+  left: 28px;
+  padding: 10px 0 0 0;
 }
 
 .intro__cta {
@@ -162,6 +187,10 @@ body {
   }
   .intro__input {
     min-width: auto;
+  }
+  .intro__error {
+    position: initial;
+    margin: 10px 0 20px 0;
   }
   .intro__cta {
     max-width: 100%;
