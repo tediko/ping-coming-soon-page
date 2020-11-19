@@ -24,9 +24,20 @@ body {
 /* Variables */
 @keyframes errorMsg {
   0% {
+    transform: rotate(0deg);
     opacity: 0;
   }
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  75% {
+    transform: rotate(2deg);
+  }
   100% {
+    transform: rotate(0deg);
     opacity: 1;
   }
 }
